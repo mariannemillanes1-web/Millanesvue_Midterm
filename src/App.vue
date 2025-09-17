@@ -1,12 +1,10 @@
 <template>
   <div>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Movie Finder</a>
-        <div>
-          <router-link class="btn btn-outline-light me-2" to="/">Home</router-link>
-          <router-link class="btn btn-outline-light" to="/about">About</router-link>
-        </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light px-4">
+      <a class="navbar-brand" href="#">Student App</a>
+      <div class="navbar-nav">
+        <router-link to="/" class="nav-link">Home</router-link>
+        <router-link to="/about" class="nav-link">About</router-link>
       </div>
     </nav>
     <div class="container mt-4">
@@ -15,5 +13,8 @@
   </div>
 </template>
 
-<script setup>
+<script>
+export default {
+  name: 'App',
+};
 </script>
